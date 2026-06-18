@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xodium Exam Portal | Torque Institute</title>
+    <style>
+        :root {
+            --navy-blue: #041E42;
+            --gold: #C5A974;
+            --light-gray: #f4f4f9;
+            --dark-text: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--navy-blue);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: var(--gold);
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .instructions {
+            text-align: left;
+            background-color: #fcfcfc;
+            border-left: 4px solid var(--navy-blue);
+            padding: 20px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .instructions h3 {
+            margin-top: 0;
+            color: var(--navy-blue);
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 600px) {
+            .btn-container {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 250px;
+            box-sizing: border-box;
+        }
+
+        .btn-download {
+            background-color: var(--navy-blue);
+            color: #ffffff;
+            border: 2px solid var(--navy-blue);
+        }
+
+        .btn-download:hover {
+            background-color: #ffffff;
+            color: var(--navy-blue);
+        }
+
+        .btn-submit {
+            background-color: #ffffff;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-submit:hover {
+            background-color: var(--gold);
+            color: #ffffff;
+        }
+
+        .email-note {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .email-note a {
+            color: var(--navy-blue);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="1000340285.png" alt="Torque Institute Logo" class="logo">
+        
+        <h1>Xodium Exam</h1>
+        <h2>Torque Institute of Physical and Mathematical Sciences</h2>
+
+        <div class="instructions">
+            <h3>Important Instructions</h3>
+            <ul>
+                <li>Download the official question paper using the button below.</li>
+                <li>Write your solutions clearly on clean, unlined paper.</li>
+                <li>Ensure all pages are numbered and scanned sequentially into a <strong>single PDF file</strong>.</li>
+                <li>Submissions must be made before the designated deadline. Late entries will not be evaluated.</li>
+            </ul>
+        </div>
+
+        <div class="btn-container">
+            <a href="xodium_exam_paper.pdf" class="btn btn-download" download>Download Question Paper</a>
+            
+            <a href="https://forms.google.com/YOUR_FORM_LINK" class="btn btn-submit" target="_blank">Submit Solutions</a>
+        </div>
+
+        <p class="email-note">
+            Having trouble with the submission portal? You can also email your PDF to: <br>
+            <a href="mailto:submissions@torqueinstitute.com">submissions@torqueinstitute.com</a>
+        </p>
+    </div>
+
+</body>
+</html>
